@@ -10,6 +10,7 @@ export class NavbarComponent implements OnInit {
 	mobNavToggle:string = '';
 	mobNavHeight:number = 30;
 	visibility:string='';
+  widthMobnav:number = 0;
   constructor() { }
 
   ngOnInit() {

@@ -10,6 +10,7 @@
 	
 	.bg-white {
     background-color: #fff;
+    z-index: 10000;
 	}
 
 	.header-vertical #header #main-menu {
@@ -170,7 +171,7 @@
     	margin-top: 10px!important;
 	}
 	.list-inline {
-	    padding-left: 0;
+	    padding-left: 15%;
 	    margin-left: -5px;
 	    list-style: none;
 	}
@@ -369,6 +370,11 @@
 	height: 100%;
 	float: right;
     width: 30%;
+	margin-left: 70%;
+
+    position: fixed;
+    z-index: 500;
+    
 
 
 }

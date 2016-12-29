@@ -1,0 +1,139 @@
+.margin-b-0 {
+    margin-bottom: 0!important;
+}
+h1 {
+    font-size: 42px;
+    margin-bottom: 34px;
+}
+h1, h2, h3, h4 {
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+
+
+
+.dark .text-muted {
+    color: rgba(255,255,255,.6);
+}
+.text-muted {
+    color: #888;
+}
+.margin-b-60 {
+    margin-bottom: 60px!important;
+}
+.text-muted {
+    color: #777;
+}
+h5 {
+    font-size: 18px;
+}
+h5, h6 {
+    font-weight: 600;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+h5, p {
+    margin-bottom: 20px;
+}
+
+
+.testimonial {
+    margin-bottom: 45px;
+    text-align: left;
+}
+
+.testimonial-dark .testimonial-content {
+    color: #fff;
+    background-color: rgba(0,0,0,.2);
+}
+.testimonial-content {
+    position: relative;
+    padding: 18px 23px;
+    line-height: 1.2;
+    background-color: #F6F6F6;
+}
+
+.testimonial-author {
+    margin-top: 20px;
+    line-height: 1.1;
+}
+
+
+.animated.visible {
+    visibility: visible;
+}
+.testimonial-photo {
+    position: relative;
+    float: left;
+    width: 52px;
+    height: 52px;
+}
+
+.testimonial-with-photo .testimonial-author-txt {
+    margin-left: 65px;
+    padding-top: 11px;
+}
+
+.testimonial-author .name {
+    font-weight: 500;
+    font-size: 14px;
+    display: block;
+}
+
+
+.testimonial-author .caption {
+    font-size: 12px;
+    font-weight: 600;
+}
+.text-secondary, .btn-secondary:hover, .btn-secondary:focus, .icon-secondary.icon-hover:hover, .icon-secondary.icon-hover:focus {
+    color: #31485e;
+}
+
+
+
+.testimonial-dark .testimonial-content:before {
+    border-color: rgba(0,0,0,.2) transparent transparent;
+}
+
+.testimonial-content:before {
+    position: absolute;
+    bottom: -14px;
+    left: 25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 14px 14px 0 0;
+    content: '';
+    border-color: #F6F6F6 transparent transparent;
+}
+
+.bg-primary{
+	background-color:#3aa8db; 
+}
+
+.dark h6 {
+    color: rgba(255,255,255,.4);
+}
+
+.margin-b-50 {
+    margin-bottom: 50px!important;
+    margin-top: 5%;
+}
+h6 {
+    font-size: 13px;
+    color: rgba(0,0,0,.3);
+    margin-bottom: 16px;
+}
+h5, h6 {
+    font-weight: 600;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+.example-box-title, .label, h6 {
+    text-transform: uppercase;
+}

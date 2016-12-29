@@ -8,12 +8,12 @@
    
     <nav id="main-menu">
         <ul class="nav nav-vertical">
-            <li><a href="#start" class="active"><span>Start</span></a></li>
-            <li><a href="#resume"><span>Resume</span></a></li>
-            <li><a href="#portfolio"><span>Portfolio</span></a></li>
-            <li><a href="#testimonials"><span>Testimonials</span></a></li>
-            <li><a href="#posts"><span>Latest Posts</span></a></li>
-            <li><a href="#contact"><span>Contact</span></a></li>
+            <li><a pageScroll href="#start" class="active"><span>Start</span></a></li>
+            <li><a pageScroll href="#resume"><span>Resume</span></a></li>
+            <li><a pageScroll href="#portfolio"><span>Portfolio</span></a></li>
+            <li><a pageScroll href="#testimonials"><span>Testimonials</span></a></li>
+            <li><a pageScroll href="#posts"><span>Latest Posts</span></a></li>
+            <li><a pageScroll href="#contact"><span>Contact</span></a></li>
            
         </ul>
     </nav>
@@ -36,11 +36,11 @@
 
 
 
-<a href="#" id="mobile-nav-toggle" class="icon icon-circle icon-sm icon-primary icon-hover visible-xs visible-sm hidden-lg hidden-md" (click)="sidenav.toggle();visibility='hidden' " [style.visibility] ="visibility" >
+<a href="#" id="mobile-nav-toggle" class="icon icon-circle icon-sm icon-primary icon-hover visible-xs visible-sm hidden-lg hidden-md" (click)="sidenav.toggle();visibility='hidden';widthMobnav=30 " [style.visibility] ="visibility"  >
     <i class="fa fa-bars menu-bar-icon"></i>
 </a>
 
-<md-sidenav-container class="mobile-side-nav  hidden-lg hidden-md" [style.height.px] ="mobNavHeight">
+<md-sidenav-container class="mobile-side-nav  hidden-lg hidden-md" [style.height.px] ="mobNavHeight" >
   <md-sidenav #sidenav mode="over" align="end" opened="false" class="bg-white inner-mobile-side-nav">
    
 
@@ -77,7 +77,7 @@
                 <li><a href="#" class="icon icon-xs"><i class="fa fa-google-plus text-muted"></i></a></li>
             </ul>
     </div>
-    <a href="#" class="mobile-nav-close icon icon-hover icon-xs icon-circle icon-primary" (click)="sidenav.toggle();visibility='visible' "><i class="fa fa-times"></i></a>
+    <a href="#" class="mobile-nav-close icon icon-hover icon-xs icon-circle icon-primary" (click)="sidenav.toggle();visibility='visible';widthMobnav=0 "><i class="fa fa-times"></i></a>
 </div>
   </md-sidenav>
   
