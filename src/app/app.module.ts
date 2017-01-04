@@ -17,6 +17,11 @@ import {AgmCoreModule} from "angular2-google-maps/core";
 
 
 
+import { Ng2UtilsModule } from 'ng2-utils';
+import { Ng2ScrollableModule } from 'ng2-scrollable';
+
+
+
 
 import { SimpleTimer } from 'ng2-simple-timer';
 import { NavbarComponent } from './website/navbar/navbar.component';
@@ -56,7 +61,10 @@ import { SidebarTestComponent } from './sidebar-test/sidebar-test.component';
     MaterialModule.forRoot(),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyB3uN3p-F7jpFl4BfRrs8xcV57Qtz8aB8E'
-    })
+    }),
+    Ng2ScrollableModule,
+    Ng2UtilsModule
+    
 
   ],
   providers: [ SimpleTimer ],

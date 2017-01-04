@@ -1,6 +1,5 @@
-<div id="wrapper" [ngClass]="toggle" >
+<!-- <div id="wrapper" [ngClass]="toggle" >
 
-        <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
@@ -31,9 +30,8 @@
                 </li>
             </ul>
         </div>
-        <!-- /#sidebar-wrapper -->
+        /#sidebar-wrapper
 
-        <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
@@ -46,6 +44,31 @@
                 </div>
             </div>
         </div>
-        <!-- /#page-content-wrapper -->
 
+    </div> -->
+
+
+
+
+    <ul>
+      <li [class.current]="id=='s1'" (click)="scrollable.el.scrollTo('s1')">One
+      <li [class.current]="id=='s2'" (click)="scrollable.el.scrollTo('s2')">Two
+      <li [class.current]="id=='s3'" (click)="scrollable.el.scrollTo('s3')">Three
+      <li [class.current]="id=='s4'" (click)="scrollable.el.scrollTo('s4')">Four
+      <li [class.current]="id=='s5'" (click)="scrollable.el.scrollTo('s5')">Five
+      <li [class.current]="id=='s6'" (click)="scrollable.el.scrollTo('s6')">Six
+      <li [class.current]="id=='s7'" (click)="scrollable.el.scrollTo('s7')">Seven
+      <li [class.current]="id=='s8'" (click)="scrollable.el.scrollTo('s8')">Eight
+      <li [class.current]="id=='s9'" (click)="scrollable.el.scrollTo('s9')">Nine
+    </ul>
+    <div class="scrollable" (scrolledTo)="id=$event" ng2-scrollable>
+      <div id="s1">One</div>
+      <div id="s2">Two</div>
+      <div id="s3">Three</div>
+      <div id="s4">Four</div>
+      <div id="s5">Five</div>
+      <div id="s6">Six</div>
+      <div id="s7">Seven</div>
+      <div id="s8">Eight</div>
+      <div id="s9">Nine</div>
     </div>

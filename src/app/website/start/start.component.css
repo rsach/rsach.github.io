@@ -23,17 +23,19 @@
     width: 90%;
 }
 .text-md {
+
+    
     font-size: 12px;
     padding-top: 5%;
-    padding-left: 15%;
+    padding-left: 25%;
     height: 15px;
 }
 .container-wide {
+    position: absolute;
+    top: 0px;   
     width: 80%;
 }
-.bg-image+* {
-    position: relative;
-}
+
 @media (min-width: 992px)
 .container {
     width: 970px;
@@ -50,6 +52,8 @@
     width:50%;
     margin-top: 30%;
     margin-left: 25%;
+    position: absolute;
+    top: 0px;
 }
 
 

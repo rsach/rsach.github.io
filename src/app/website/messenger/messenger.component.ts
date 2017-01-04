@@ -34,7 +34,6 @@ export class MessengerComponent implements OnInit {
    @HostListener("window:scroll", ['$event'])
    onWindowScroll(){
    	this.messengerOffsetTop = this.scrollbarYPos();
-   	console.log(this.messengerOffsetTop)
 
    }
 

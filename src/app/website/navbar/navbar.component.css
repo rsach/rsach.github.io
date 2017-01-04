@@ -52,10 +52,13 @@
 	}
 
 	#main-menu .nav-vertical>li>a {
-    margin-left: 50%;
-    width:50%;
+    margin-left: 40%;
+    width:60%;
     padding-left: 25px;
     padding-right: 25px;
+    background: transparent;
+    text-align: center;
+    font-weight: 900;
 	}
 	.dark, .nav-vertical>li.active>a, .nav-vertical>li>a.active {
 	    color: #fff;

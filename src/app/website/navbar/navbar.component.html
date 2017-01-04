@@ -7,13 +7,13 @@
 
    
     <nav id="main-menu">
-        <ul class="nav nav-vertical">
-            <li><a pageScroll href="#start" class="active"><span>Start</span></a></li>
-            <li><a pageScroll href="#resume"><span>Resume</span></a></li>
-            <li><a pageScroll href="#portfolio"><span>Portfolio</span></a></li>
-            <li><a pageScroll href="#testimonials"><span>Testimonials</span></a></li>
-            <li><a pageScroll href="#posts"><span>Latest Posts</span></a></li>
-            <li><a pageScroll href="#contact"><span>Contact</span></a></li>
+        <ul class="nav nav-vertical" >
+            <li><a pageScroll href="#start" [class.active]="id =='start'" ><span>Start</span></a></li>
+            <li><a pageScroll  href="#resume" [class.active]="id =='resume'" ><span>Resume</span></a></li>
+            <li><a pageScroll  href="#portfolio" [class.active]="id =='portfolio'" ><span>Portfolio</span></a></li>
+            <li><a pageScroll href="#testimonial" [class.active]="id =='testimonial'" ><span>Testimonials</span></a></li>
+            <li><a pageScroll href="#posts" [class.active]="id =='posts'" ><span>Latest Posts</span></a></li>
+            <li><a pageScroll href="#contact" [class.active]="id =='contact'" ><span>Contact</span></a></li>
            
         </ul>
     </nav>
@@ -86,3 +86,5 @@
 
   
 </md-sidenav-container>
+
+

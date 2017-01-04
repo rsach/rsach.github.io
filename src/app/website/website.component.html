@@ -1,15 +1,19 @@
-<app-navbar></app-navbar>
+
+	<app-navbar [id]="id"></app-navbar>
 
 
- <app-start id="start" ></app-start>
+<div ng2-scrollable (elementVisible)="elementVis($event.id)">
+ 	<app-start id="start" ></app-start>
 
- <app-messenger></app-messenger>
+     <app-messenger></app-messenger>
 
- <app-resume id="resume"></app-resume>
+     <app-resume id="resume"></app-resume>
 
- <app-portfolio id="portfolio"></app-portfolio>
+     <app-portfolio id="portfolio"></app-portfolio>
 
- <app-testimonial id="testimonial"></app-testimonial>
- <app-posts id="posts"></app-posts>
+     <app-testimonial id="testimonial"></app-testimonial>
+     <app-posts id="posts"></app-posts>
 
- <app-contact id="contact"></app-contact>
+     <app-contact id="contact"></app-contact>
+
+</div>

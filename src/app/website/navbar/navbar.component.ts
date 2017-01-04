@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener,Input } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -11,6 +11,9 @@ export class NavbarComponent implements OnInit {
 	mobNavHeight:number = 30;
 	visibility:string='';
   widthMobnav:number = 0;
+
+
+  @Input('id') id = 'start';
   constructor() { }
 
   ngOnInit() {
@@ -22,5 +25,8 @@ export class NavbarComponent implements OnInit {
   	this.mobNavHeight = window.innerHeight;
 
   }
+
+
+
 
 }
