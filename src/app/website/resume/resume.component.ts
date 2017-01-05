@@ -1,15 +1,29 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-resume',
   templateUrl: './resume.component.html',
   styleUrls: ['./resume.component.css']
 })
-export class ResumeComponent implements OnInit {
+export class ResumeComponent implements OnInit,OnChanges {
 
-  constructor() { }
+
+	@Input('id') id ;
+	animate:string='';
+
+  constructor() {
+  	
+
+   }
 
   ngOnInit() {
+  }
+
+
+  ngOnChanges(){
+  	if(this.id){
+  		this.animate='visible fadeInDown'
+  	}
   }
 
 }

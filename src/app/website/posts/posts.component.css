@@ -193,3 +193,13 @@ p {
 
     transition: all .2s ease-in-out;
 }
+
+
+
+.animated{
+    visibility: hidden;
+}
+
+.animated.visible{
+    visibility: visible;
+}
