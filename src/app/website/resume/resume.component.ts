@@ -23,7 +23,17 @@ export class ResumeComponent implements OnInit,OnChanges {
   ngOnChanges(){
   	if(this.id){
   		this.animate='visible fadeInDown'
+
+
   	}
+  }
+
+
+  skillIncrement(value){
+    if(true){
+
+    }
+
   }
 
 }

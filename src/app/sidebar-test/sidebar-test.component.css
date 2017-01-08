@@ -36,16 +36,15 @@
     width: 250px;
 }
 
-/*#page-content-wrapper {
+#page-content-wrapper {
     width: 100%;
     position: absolute;
     padding: 15px;
-}*/
+}
 
-/*#wrapper.toggled #page-content-wrapper {
+#wrapper.toggled #page-content-wrapper {
     position: absolute;
-    margin-left: -250px;
-}*/
+}
 
 /* Sidebar Styles */
 
@@ -112,13 +111,20 @@
         width: 0;
     }
 
-   /* #page-content-wrapper {
+    #page-content-wrapper {
         padding: 20px;
-        position: relative;
-    }*/
+        position: absolute;
+    }
 
-   /* #wrapper.toggled #page-content-wrapper {
-        position: relative;
+    #wrapper.toggled #page-content-wrapper {
+        position: absolute;
         margin-left: 0;
-    }*/
+    }
 }
+
+
+
+
+
+
+

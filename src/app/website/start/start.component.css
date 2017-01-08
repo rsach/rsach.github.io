@@ -36,6 +36,12 @@
     width: 80%;
 }
 
+
+.container-wid {
+    top: 0px;   
+    width: 80%;
+}
+
 @media (min-width: 992px)
 .container {
     width: 970px;
@@ -53,6 +59,14 @@
     margin-top: 30%;
     margin-left: 25%;
     position: absolute;
+    top: 0px;
+}
+
+
+.container-intr{
+    width:50%;
+    margin-top: 30%;
+    margin-left: 25%;
     top: 0px;
 }
 

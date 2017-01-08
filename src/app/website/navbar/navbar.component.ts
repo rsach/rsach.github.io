@@ -12,6 +12,12 @@ export class NavbarComponent implements OnInit {
 	visibility:string='';
   widthMobnav:number = 0;
 
+  _opened:boolean = false;
+
+
+
+  toggle:string =''
+
 
   @Input('id') id = 'start';
   constructor() { }
@@ -24,6 +30,10 @@ export class NavbarComponent implements OnInit {
   calculateHeight(){
   	this.mobNavHeight = window.innerHeight;
 
+  }
+
+  toggle1(){
+    this._opened = !this._opened;
   }
 
 

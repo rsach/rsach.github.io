@@ -90,12 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 .gallery-item, .gallery-item .item-photo {
     position: relative;
 }
-#messenger, .gallery-item, .section {
-    overflow: hidden;
-}
-.gallery-item, .timeline-event>* {
-    display: block;
-}
+
 
 
 img {
@@ -114,7 +109,6 @@ img {
 .gallery-item .item-hover {
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     padding: 5% 10%;
@@ -176,7 +170,7 @@ img {
 .icon-circle {
     position: relative;
     font-size: 32px;
-    height: 84px;
+    height: 56px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -185,7 +179,7 @@ img {
 .icon {
     font-size: 62px;
     vertical-align: middle;
-    width: 84px;
+    width: 56px;
 }
 .icon, .icon-circle>*, .social-icons>li {
     display: inline-block;
@@ -237,7 +231,7 @@ a {
 .icon-circle {
     position: relative;
     font-size: 32px;
-    height: 84px;
+    height: 56px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -246,7 +240,7 @@ a {
 .icon {
     font-size: 62px;
     vertical-align: middle;
-    width: 84px;
+    width: 56px;
 }
 .icon, .icon-circle>*, .social-icons>li {
     display: inline-block;
@@ -317,7 +311,7 @@ a:hover, a:focus, .text-primary, .icon-white, #messenger-toggle, .btn-primary:ho
 .icon-circle {
     position: relative;
     font-size: 32px;
-    height: 84px;
+    height: 56px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -326,7 +320,7 @@ a:hover, a:focus, .text-primary, .icon-white, #messenger-toggle, .btn-primary:ho
 .icon {
     font-size: 62px;
     vertical-align: middle;
-    width: 84px;
+    width: 56px;
 }
 .icon, .icon-circle>*, .social-icons>li {
     display: inline-block;
@@ -383,3 +377,170 @@ a {
     line-height: 1;
 }
 
+
+.brick{
+    margin:25px;
+      padding-left: 35px;
+            padding-right: 35px;
+           
+
+}
+
+@media only screen and (min-width: 1000px){
+.brick1{
+     width: 40%;
+}
+
+}
+
+.brick img { width: 100.5%; }
+
+
+.gallery-item:hover .item-hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+}
+.gallery-item .item-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 5% 10%;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.bg-dark {
+    background-color: rgba(0,0,0,.7);
+}
+.dark, .nav-vertical>li.active>a, .nav-vertical>li>a.active {
+    color: #fff;
+}
+
+
+
+    .ajax-body {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+@media only screen and (max-width: 1480px)
+.header-vertical .section {
+    padding-left: 280px;
+}
+.header-vertical .section {
+    padding-left: 320px;
+}
+.bg-white {
+    background-color: #fff;
+}
+.section, .speciality-icon, .timeline, .timeline-event {
+    position: relative;
+}
+#messenger, .gallery-item, .section {
+    overflow: hidden;
+}
+
+
+@media only screen and (max-width: 1480px)
+.container-wide {
+    width: 90%;
+}
+
+.container-wide {
+    width: 80%;
+}
+
+.margin-b-50 {
+    margin-bottom: 50px!important;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 34px;
+}
+h1, h2, h3, h4 {
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+
+p.lead {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.text-light, p.lead {
+    font-weight: 300;
+}
+
+.margin-b-80 {
+    margin-bottom: 80px!important;
+}
+
+.margin-b-10 {
+    margin-bottom: 10px!important;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    -webkit-backface-visibility: hidden;
+}
+
+
+.modal-fullscreen {
+  background: transparent;
+}
+.modal-fullscreen .modal-content {
+  background: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.modal-backdrop.modal-backdrop-fullscreen {
+  background: #ffffff;
+}
+.modal-backdrop.modal-backdrop-fullscreen.in {
+  opacity: .97;
+  filter: alpha(opacity=97);
+}
+
+/* .modal-fullscreen size: we use Bootstrap media query breakpoints */
+
+.modal-fullscreen .modal-dialog {
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .modal-fullscreen .modal-dialog {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-fullscreen .modal-dialog {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-fullscreen .modal-dialog {
+     width: 1170px;
+  }
+}
+
+
+.close{
+    position: fixed;
+    top: 3%;
+    right: 3%;
+}
+
+
+.margin-b-30 {
+    margin-bottom: 30px!important;
+}

@@ -20,6 +20,14 @@ import {AgmCoreModule} from "angular2-google-maps/core";
 import { Ng2UtilsModule } from 'ng2-utils';
 import { Ng2ScrollableModule } from 'ng2-scrollable';
 
+import { SidebarModule } from 'ng-sidebar';
+import { MasonryModule } from 'angular2-masonry';
+import { ModalModule } from 'ng2-bootstrap';
+
+
+
+
+
 
 
 
@@ -33,6 +41,7 @@ import { TestimonialComponent } from './website/testimonial/testimonial.componen
 import { PostsComponent } from './website/posts/posts.component';
 import { ContactComponent } from './website/contact/contact.component';
 import { SidebarTestComponent } from './sidebar-test/sidebar-test.component';
+import { MobileViewComponent } from './mobile-view/mobile-view.component';
 
 
 
@@ -50,7 +59,8 @@ import { SidebarTestComponent } from './sidebar-test/sidebar-test.component';
     TestimonialComponent,
     PostsComponent,
     ContactComponent,
-    SidebarTestComponent
+    SidebarTestComponent,
+    MobileViewComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +73,12 @@ import { SidebarTestComponent } from './sidebar-test/sidebar-test.component';
       apiKey: 'AIzaSyB3uN3p-F7jpFl4BfRrs8xcV57Qtz8aB8E'
     }),
     Ng2ScrollableModule,
-    Ng2UtilsModule
+    Ng2UtilsModule,
+    SidebarModule,
+    MasonryModule,
+    ModalModule.forRoot()
+    
+
     
 
   ],

@@ -35,13 +35,21 @@
 
 
 
-
-<a href="#" id="mobile-nav-toggle" class="icon icon-circle icon-sm icon-primary icon-hover visible-xs visible-sm hidden-lg hidden-md" (click)="sidenav.toggle();visibility='hidden';widthMobnav=30 " [style.visibility] ="visibility"  >
+<!-- 
+<a href="#" id="mobile-nav-toggle" class="icon icon-circle icon-sm icon-primary icon-hover visible-xs visible-sm hidden-lg hidden-md" (click)="toggle1();visibility='hidden';widthMobnav=30 " [style.visibility] ="visibility"  >
     <i class="fa fa-bars menu-bar-icon"></i>
 </a>
 
-<md-sidenav-container class="mobile-side-nav  hidden-lg hidden-md" [style.height.px] ="mobNavHeight" >
-  <md-sidenav #sidenav mode="over" align="end" opened="false" class="bg-white inner-mobile-side-nav">
+<ng-sidebar-container class="mobile-side-nav  hidden-lg hidden-md" [style.height.px] ="mobNavHeight" >
+  <ng-sidebar #sidenav         [(opened)]="_opened"
+        [mode]="'over'"
+        [keyClose]="false"
+        [position]="'right'"
+        [dockedSize]="'50px'"
+        [closeOnClickOutside]="true"
+        [animate] = "true"
+
+         class="bg-white inner-mobile-side-nav">
    
 
 	
@@ -77,14 +85,15 @@
                 <li><a href="#" class="icon icon-xs"><i class="fa fa-google-plus text-muted"></i></a></li>
             </ul>
     </div>
-    <a href="#" class="mobile-nav-close icon icon-hover icon-xs icon-circle icon-primary" (click)="sidenav.toggle();visibility='visible';widthMobnav=0 "><i class="fa fa-times"></i></a>
+    <a href="#" class="mobile-nav-close icon icon-hover icon-xs icon-circle icon-primary" (click)="toggle1();visibility='visible';widthMobnav=0 "><i class="fa fa-times"></i></a>
 </div>
-  </md-sidenav>
+  </ng-sidebar>
   
 
 
 
   
-</md-sidenav-container>
+</ng-sidebar-container>
 
 
+ -->
