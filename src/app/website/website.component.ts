@@ -19,6 +19,8 @@ export class WebsiteComponent implements OnInit {
   messengerBox:boolean;
 
   @Output('mobNavPosition') mobNavPosition = new EventEmitter();
+  @Output('navActive') navActive = new EventEmitter();
+
   constructor() { }
 
   elementVis(event){
@@ -33,6 +35,10 @@ export class WebsiteComponent implements OnInit {
     }else if(this.id == 'contact'){
       this.contact = 'contact';
     }
+
+    this.navActive.emit(this.id)
+
+
 
 
   }

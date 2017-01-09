@@ -12,6 +12,7 @@ export class MobileViewComponent implements OnInit,OnChanges {
     visibility:string='visible';
     toggle:string = '';
     mobNavOffsetTop:number =5;
+    id:string='start';
 
 
   ngOnInit() {
@@ -43,6 +44,11 @@ export class MobileViewComponent implements OnInit,OnChanges {
     console.log(event);
     this.mobNavOffsetTop = event?10:5;
 
+  }
+
+  navActive(event){
+    this.id = event;
+    
   }
 
 
