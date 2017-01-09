@@ -1,4 +1,8 @@
-import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, HostListener, Input, OnChanges} from '@angular/core';
+import { Component, OnInit, ViewChild,
+         ElementRef, AfterViewInit, 
+         HostListener, Input,
+         OnChanges, Output, 
+         EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -10,7 +14,8 @@ export class ContactComponent implements OnInit,AfterViewInit,OnChanges {
 	@ViewChild('contact') el:ElementRef;
 	offsetTop:number =0;
   @Input('id') contact;
-  animate:string=''
+  animate:string='';
+  @Output() contactFormEvent = new EventEmitter();
 
   constructor() {
 
@@ -44,5 +49,13 @@ export class ContactComponent implements OnInit,AfterViewInit,OnChanges {
       this.animate = 'flipInY visible'; 
     }
   }
+
+
+  contactForm(){
+    this.contactFormEvent.emit(true);
+  }
+
+
+
 
 }

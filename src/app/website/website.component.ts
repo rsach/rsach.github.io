@@ -16,6 +16,9 @@ export class WebsiteComponent implements OnInit {
   testimonial:string;
   posts:string;
   contact:string;
+  messengerBox:boolean;
+
+  @Output('mobNavPosition') mobNavPosition = new EventEmitter();
   constructor() { }
 
   elementVis(event){
@@ -36,6 +39,14 @@ export class WebsiteComponent implements OnInit {
 
   ngOnInit() {
   	
+  }
+
+
+  formEvent(event){
+    this.messengerBox = event;
+    this.mobNavPosition.emit(this.messengerBox);
+
+
   }
 
 }

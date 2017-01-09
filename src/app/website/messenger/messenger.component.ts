@@ -1,4 +1,7 @@
-import { Component, OnInit, transition, style, trigger, animate,HostListener } from '@angular/core';
+import { Component, OnInit, transition,
+         style, trigger, animate,
+         HostListener, Input, OnChanges,
+         Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-messenger',
@@ -18,11 +21,14 @@ import { Component, OnInit, transition, style, trigger, animate,HostListener } f
     
   
 })
-export class MessengerComponent implements OnInit {
+export class MessengerComponent implements OnInit,OnChanges {
 
-	messengerBox:boolean= false;
+	@Input('box') messengerBox:boolean= false;
 	messengerOffsetTop:number;
 	toggle:string='';
+  @Output('onClose1') onClose1 = new EventEmitter();
+   
+
   constructor() {
   	this.messengerOffsetTop=0;
    }
@@ -33,6 +39,7 @@ export class MessengerComponent implements OnInit {
 
    @HostListener("window:scroll", ['$event'])
    onWindowScroll(){
+
    	this.messengerOffsetTop = this.scrollbarYPos();
 
    }
@@ -40,6 +47,16 @@ export class MessengerComponent implements OnInit {
    scrollbarYPos():number{
    	    return window.pageYOffset || document.documentElement.scrollTop;
 
+   }
+
+   ngOnChanges(){
+
+  
+   }
+
+   onToggle(){
+     this.messengerBox = !this.messengerBox;
+     this.onClose1.emit(this.messengerBox);
    }
 
 
