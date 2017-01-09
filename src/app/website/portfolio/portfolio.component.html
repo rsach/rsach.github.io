@@ -142,10 +142,10 @@
                    <masonry-brick class="brick brick1" *ngFor="let portfolio of portfolios">
                     <div class="gallery-item">
                         <div class="item-photo">
-                            <a target="_blank"  (click)="lgModal.show()" ><img src="{{ portfolio.img }}" alt="{{ portfolio.title }}"></a>
+                            <a target="_blank"  (click)="lgModal.show();mobNav()" ><img src="{{ portfolio.img }}" alt="{{ portfolio.title }}"></a>
                             <div class="item-hover bg-dark dark">
                                 <div class="item-hover-content">
-                                    <a (click)="lgModal.show()" class="icon icon-sm icon-hover icon-circle icon-primary"><i class="fa fa-link"   ></i></a>
+                                    <a (click)="lgModal.show();mobNav()" class="icon icon-sm icon-hover icon-circle icon-primary"><i class="fa fa-link"   ></i></a>
                                         
                                     
 
@@ -206,7 +206,7 @@
                                 </div>
                                 
                                 <!-- Close -->
-                                <a  class="close icon icon-hover icon-primary icon-circle icon-sm" (click)="lgModal.hide()" ><i class="fa fa-close"></i></a>
+                                <a  class="close icon icon-hover icon-primary icon-circle icon-sm" (click)="lgModal.hide();mobNav()" ><i class="fa fa-close"></i></a>
                             </div>
                     
                     </div>

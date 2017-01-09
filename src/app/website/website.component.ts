@@ -55,4 +55,8 @@ export class WebsiteComponent implements OnInit {
 
   }
 
+  formEven(event){
+    this.mobNavPosition.emit(event);
+  }
+
 }

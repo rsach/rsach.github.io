@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-portfolio',
@@ -25,6 +25,9 @@ export class PortfolioComponent implements OnInit {
   ]
 
   portfolios:any[];
+  mobNavv:boolean = false;
+  @Output('mobNavOffsetTop') mobNavOffsetTop = new EventEmitter();
+
 
   ngOnInit() {
 
@@ -39,6 +42,14 @@ export class PortfolioComponent implements OnInit {
   	this.portfolios = this.project.filter(portfolio=> portfolio.type===type);
 
   	}
+  }
+
+  mobNav(){
+    this.mobNavv = !this.mobNavv;
+    console.log(this.mobNavv);
+    this.mobNavOffsetTop.emit(this.mobNavv);
+
+
   }
 
 

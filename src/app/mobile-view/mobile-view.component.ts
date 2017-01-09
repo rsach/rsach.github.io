@@ -42,7 +42,7 @@ export class MobileViewComponent implements OnInit,OnChanges {
 
   mobNavPosition(event){
     console.log(event);
-    this.mobNavOffsetTop = event?10:5;
+    this.mobNavOffsetTop = event?14:5;
 
   }
 

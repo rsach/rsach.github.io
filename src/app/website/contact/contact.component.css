@@ -27,10 +27,37 @@
 .contact-box {
     margin-left: 5%;
 }
+
+
+
+.contact-box {
+    margin-left: 10%;
+    width: 90%;
+    padding: 5% 3%;
+}
+
+.contact-card{
+    bottom: 10px;
+    left: 10%;
+    position: absolute;
+    z-index: 500;
+}
+
+@media only screen and (min-width: 1000px){
 .contact-box {
     margin-left: 10%;
     width: 380px;
     padding: 60px 40px;
+}
+
+.contact-card{
+    bottom: 10px;
+    left: 10%;
+    position: absolute;
+    height: 500px;
+    z-index: 500;
+}
+
 }
 
 .bg-image+* {
@@ -41,13 +68,7 @@
 }
 
 
-.contact-card{
-	bottom: 10px;
-    left: 10%;
-    position: absolute;
-    height: 500px;
-    z-index: 500;
-}
+
 
 
 h1 {
