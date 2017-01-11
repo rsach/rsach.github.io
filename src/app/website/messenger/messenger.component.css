@@ -5,17 +5,35 @@
     z-index: 7000;
 }
 
+@media only screen and (min-width: 700px){
 .messenger-boxx{
 	position: fixed;
     right: 0;
     top: 0;
     bottom: 0;
-    width: 40%;
+    width: 35%;
     background-color: #3aa8db;
     z-index: 100000;
     transition: 0.8s;
   -webkit-transition:  0.8s;
 
+}
+}
+
+
+@media only screen and (max-width: 700px){
+.messenger-boxx{
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #3aa8db;
+    z-index: 100000;
+    transition: 0.8s;
+  -webkit-transition:  0.8s;
+
+}
 }
 
 
