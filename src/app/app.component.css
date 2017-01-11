@@ -1,4 +1,9 @@
-
+.transition{
+	transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+}
 
 .container-fluid{
   margin-right: 0px;

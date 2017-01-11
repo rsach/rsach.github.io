@@ -1,3 +1,9 @@
+.transition{
+	transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+}	
 
 	#header {
 		transition: all 0.3s;
@@ -379,7 +385,7 @@
 }
 
 .inner-mobile-side-nav{
-	width: 100%;
+	width: 30%;
 }
 
 
