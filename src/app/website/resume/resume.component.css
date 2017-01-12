@@ -118,9 +118,10 @@ p.lead {
 .text-light, p.lead {
     font-weight: 300;
 }
-@media (min-width: 768px)
+@media (min-width: 768px){
 .lead {
     font-size: 21px;
+}
 }
 .lead {
     margin-bottom: 20px;
