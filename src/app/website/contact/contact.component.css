@@ -19,17 +19,20 @@
 .bg-secondary, .btn-secondary, .icon-circle.icon-secondary, .progress-bar-secondary, .te-secondary:before {
     background-color: #31485e;
 }
-@media only screen and (max-width: 1199px)
+@media only screen and (max-width: 1199px){
 .contact-box {
     margin-left: 1%;
 }
-@media only screen and (max-width: 1480px)
+}
+@media only screen and (max-width: 1480px){
 .contact-box {
     margin-left: 5%;
 }
 
+}
 
 
+@media only screen and (max-width: 1000px){
 .contact-box {
     margin-left: 10%;
     width: 90%;
@@ -41,6 +44,8 @@
     left: 10%;
     position: absolute;
     z-index: 500;
+}
+
 }
 
 @media only screen and (min-width: 1000px){

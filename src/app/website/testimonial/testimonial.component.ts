@@ -1,14 +1,15 @@
-import { Component, OnInit, Input, OnChanges } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, ElementRef,  ViewChild, AfterViewInit} from '@angular/core';
 
 @Component({
   selector: 'app-testimonial',
   templateUrl: './testimonial.component.html',
   styleUrls: ['./testimonial.component.css']
 })
-export class TestimonialComponent implements OnInit,OnChanges {
+export class TestimonialComponent implements OnInit,OnChanges,AfterViewInit {
 
 	@Input('id') testimonial;
 	animate:string='';
+  @ViewChild('testimo') el:ElementRef;
   constructor() { }
 
   ngOnInit() {
@@ -20,6 +21,10 @@ export class TestimonialComponent implements OnInit,OnChanges {
 
   	}
 
+  }
+
+  ngAfterViewInit(){
+    console.log(this.el);
   }
 
 }

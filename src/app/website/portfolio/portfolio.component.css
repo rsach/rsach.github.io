@@ -1,10 +1,13 @@
-@media only screen and (max-width: 1199px)
+@media only screen and (max-width: 1199px){
 .header-vertical .section {
     padding-left: 250px;
 }
-@media only screen and (max-width: 1480px)
+}
+@media only screen and (max-width: 1480px){
 .header-vertical .section {
     padding-left: 280px;
+}
+
 }
 .header-vertical .section {
     padding-left: 320px;
@@ -377,13 +380,15 @@ a {
     line-height: 1;
 }
 
-
+@media only screen and (max-width: 1000px){
 .brick{
     margin:25px;
       padding-left: 35px;
             padding-right: 35px;
             width: 100%;
            
+
+}
 
 }
 
@@ -428,9 +433,10 @@ a {
     padding-top: 90px;
     padding-bottom: 90px;
 }
-@media only screen and (max-width: 1480px)
+@media only screen and (max-width: 1480px){
 .header-vertical .section {
     padding-left: 280px;
+}
 }
 .header-vertical .section {
     padding-left: 320px;
@@ -446,9 +452,11 @@ a {
 }
 
 
-@media only screen and (max-width: 1480px)
+@media only screen and (max-width: 1480px){
 .container-wide {
     width: 90%;
+}
+
 }
 
 .container-wide {
